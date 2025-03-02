@@ -14,6 +14,9 @@
         rel="stylesheet">
 
     <style>
+        .bgg{
+            background-color: brown;
+        }
         .font {
             font-family: "Poppins", sans-serif;
             font-style: normal;
@@ -31,7 +34,7 @@
             <div class="flex items-center gap-2">
                 <div class="flex items-center bg-[#F4F7FF] gap-2 px-2 py-1 rounded-2xl">
                     <img class="w-6 h-6" src="assets/checkbox.png" alt="">
-                    <p class="text-xl">23</p>
+                    <p id="task-completed" class="text-xl">23</p>
                 </div>
                 <div>
                     <img class="w-10 px-1 py-1 bg-[#F4F7FF] rounded-full" src="assets/theme-btn.png" alt="">
@@ -41,6 +44,7 @@
     </header>
     <main class="flex mt-4">
         <section class="bg-white rounded-xl">
+            <!-- Discover Section -->
             <div class="flex justify-center px-4 py-4 gap-4">
                 <div class="flex items-center gap-3 px-5 py-5 rounded-xl bg-[#F4F7FF]">
                     <div class="bg-white px-2 py-2 rounded-full">
@@ -48,11 +52,10 @@
                     </div>
                     <div>
                         <p class="font-medium">Task Assigned </p>
-                        <p class="text-3xl font-bold">05</p>
+                        <p id="task-count" class="text-3xl font-bold">06</p>
                     </div>
                 </div>
-                <div
-                    class="flex items-center pl-10 pr-20 gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                <div id="blog-btn" class="flex items-center pl-10 pr-20 gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] cursor-pointer">
                     <img src="assets/board.png" alt="">
                     <p class="text-white">
                         Discover Something<br>New Today!
@@ -69,12 +72,14 @@
                 </div>
             </div>
             <hr class="border-dashed border-[#3752FD33] my-4">
+            <!-- Card Section -->
             <div class="px-5 pb-5 gap-3 grid grid-cols-3">
                 <!--Card1-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">ShopEase</p>
                     <h3 class="text-xl font-medium py-2">Fix Mobile Button Issue </h3>
-                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for better functionality.
+                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
+                        better functionality.
                     </p>
                     <hr class="border-dashed border-[#3752FD33] my-4">
                     <div class="flex items-center justify-between">
@@ -83,7 +88,7 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                            <button class="complete-btn btn bg-blue-600 text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +96,8 @@
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">CloudSync</p>
                     <h3 class="text-xl font-medium py-2">Add Dark Mode</h3>
-                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for better functionality.
+                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
+                        better functionality.
                     </p>
                     <hr class="border-dashed border-[#3752FD33] my-4">
                     <div class="flex items-center justify-between">
@@ -100,15 +106,16 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                            <button class="complete-btn btn bg-blue-600 text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
                 <!--Card3-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">SwiftPay</p>
-                    <h3 class="text-xl font-medium py-2">Optimize  Home page </h3>
-                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for better functionality.
+                    <h3 class="text-xl font-medium py-2">Optimize Home page </h3>
+                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
+                        better functionality.
                     </p>
                     <hr class="border-dashed border-[#3752FD33] my-4">
                     <div class="flex items-center justify-between">
@@ -117,15 +124,16 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                            <button class="complete-btn btn bg-blue-600 text-white rounded-lg">Completed</button>
                         </div>
                     </div>
-                </div> 
-                  <!--Card4-->
+                </div>
+                <!--Card4-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">Meta</p>
                     <h3 class="text-xl font-medium py-2">Add new emoji 🤲</h3>
-                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for better functionality.
+                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
+                        better functionality.
                     </p>
                     <hr class="border-dashed border-[#3752FD33] my-4">
                     <div class="flex items-center justify-between">
@@ -134,7 +142,7 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                            <button class="complete-btn btn bg-blue-600 text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -142,7 +150,8 @@
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">Google LLC</p>
                     <h3 class="text-xl font-medium py-2">Integrate OpenAI API</h3>
-                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for better functionality.
+                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
+                        better functionality.
                     </p>
                     <hr class="border-dashed border-[#3752FD33] my-4">
                     <div class="flex items-center justify-between">
@@ -151,7 +160,7 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                            <button class="complete-btn btn bg-blue-600 text-white rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +168,8 @@
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">Glassdoor</p>
                     <h3 class="text-xl font-medium py-2">Improve Job searching </h3>
-                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for better functionality.
+                    <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
+                        better functionality.
                     </p>
                     <hr class="border-dashed border-[#3752FD33] my-4">
                     <div class="flex items-center justify-between">
@@ -168,17 +178,22 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                            <button class="complete-btn btn bg-blue-600 text-white rounded-lg">Completed</button>
                         </div>
                     </div>
-                </div>   
+                </div>
             </div>
         </section>
-        <section class="text-center w-[600px] bg-white ml-4 ">
-            <h3>Activity Log</h3>
+        <section class="text-center w-[600px] bg-white ml-4 rounded-xl">
+            <div class="flex justify-center gap-3 pt-5 pb-3">
+                <img src="assets/activity.png" alt="">
+                <h3>Activity Log</h3>
+            </div>
             <button class="btn bg-blue-600 text-white rounded-lg">Clear History</button>
         </section>
     </main>
+    <script src="utilities/utilities.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
