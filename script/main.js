@@ -48,16 +48,6 @@ completeBtn.forEach(button => {
             div.appendChild(p);
             div.classList.add('log-style');
             logBox.appendChild(div);
-            // const logBox = document.querySelectorAll('.log-heading');
-            // logBox.forEach(heading => {
-            //     const innerValue = heading.innerText;
-            //     const p = document.createElement('p')
-            //     p.innerHTML = innerValue
-            //     const div = document.createElement('div');
-            //     div.appendChild(p)
-            //     const activity = document.getElementById('log-activity');
-            //     activity.appendChild(div)
-            // })
         }
     })
 });
