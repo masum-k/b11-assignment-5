@@ -14,13 +14,18 @@
         rel="stylesheet">
 
     <style>
-        .bgg {
-            background-color: brown;
-        }
-
         .font {
             font-family: "Poppins", sans-serif;
             font-style: normal;
+        }
+        .log-style{
+            background-color: #F4F7FF;
+            width: 250px;
+            margin: auto;
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 12px;
+            font-size: smaller;
         }
     </style>
 </head>
@@ -38,13 +43,13 @@
                     <p id="task-completed" class="text-xl">23</p>
                 </div>
                 <div>
-                    <img class="w-10 px-1 py-1 bg-[#F4F7FF] rounded-full" src="assets/theme-btn.png" alt="">
+                    <img onclick="changeBg()" class="cursor-pointer w-10 px-1 py-1 bg-[#F4F7FF] rounded-full" src="assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
     </header>
-    <main class="flex mt-4">
-        <section class="bg-white rounded-xl">
+    <main class="flex mt-4 h-screen">
+        <section class="bg-white rounded-xl h-5/6">
             <!-- Discover Section -->
             <div class="flex justify-center px-4 py-4 gap-4">
                 <div class="flex items-center gap-3 px-5 py-5 rounded-xl bg-[#F4F7FF]">
@@ -186,13 +191,14 @@
                 </div>
             </div>
         </section>
-        <section class="text-center w-[600px] bg-white ml-4 rounded-xl">
+        <section class="text-center w-[600px] bg-white ml-4 h-5/6 rounded-xl">
             <div class="flex justify-center gap-3 pt-5 pb-3">
                 <img src="assets/activity.png" alt="">
                 <h3>Activity Log</h3>
             </div>
             <div>
                 <button id="log-btn" class="btn bg-blue-600 text-white rounded-lg">Clear History</button>
+            <hr class="border-dashed border-[#3752FD33] my-3">
             </div>
             <section id="log-activity">
             </section>

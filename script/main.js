@@ -1,3 +1,9 @@
+function changeBg() {
+    document.body.style.background =
+        'rgb(' + Math.round(Math.random() * 255) +
+        ',' + Math.round(Math.random() * 255) +
+        ',' + Math.round(Math.random() * 255) + ')';
+}
 
 const blogBtn = document.getElementById('blog-btn');
 const deskBtn = document.getElementById('desk-btn');
@@ -31,15 +37,16 @@ completeBtn.forEach(button => {
             alert("Boared Updated Successfully!")
             button.disabled = true;
 
-            if(taskCount === 0){
+            if (taskCount === 0) {
                 alert("Congrates!!! You have completed all the task.")
             }
 
             let logBox = document.getElementById('log-activity');
             let div = document.createElement('div')
             let p = document.createElement('div');
-            p.innerHTML = 'You have Completed The Task at 12:48:15 PM'
+            p.innerHTML = 'You have Completed <br> The Task at 12:48:15 PM'
             div.appendChild(p);
+            div.classList.add('log-style');
             logBox.appendChild(div);
             // const logBox = document.querySelectorAll('.log-heading');
             // logBox.forEach(heading => {
@@ -55,6 +62,7 @@ completeBtn.forEach(button => {
     })
 });
 
-const logBtn = document.getElementById('log-btn').addEventListener('click',function(){
-    document.getElementById('log-activity').innerText = ''})
+const logBtn = document.getElementById('log-btn').addEventListener('click', function () {
+    document.getElementById('log-activity').innerText = ''
+})
 
