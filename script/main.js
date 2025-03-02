@@ -8,17 +8,9 @@ function changeBg() {
 const blogBtn = document.getElementById('blog-btn');
 const deskBtn = document.getElementById('desk-btn');
 
-if (blogBtn) {
-    blogBtn.addEventListener('click', function () {
-        window.location.href = "blog.html";
-    });
-}
-
-if (deskBtn) {
-    deskBtn.addEventListener('click', function () {
-        window.location.href = "index.html";
-    });
-}
+blogBtn.addEventListener('click', function () {
+    window.location.href = "blog.html";
+});
 
 let taskCount = document.getElementById('task-count').innerText
 let taskCompleted = document.getElementById('task-completed').innerText
