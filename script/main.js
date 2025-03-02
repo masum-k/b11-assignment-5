@@ -22,24 +22,39 @@ completeBtn.forEach(button => {
     button.addEventListener('click', function () {
         let currentTaskCount = parseInt(taskCount)
         let currentCompletedTask = parseInt(taskCompleted)
-        
-        if(currentTaskCount > 0){
+
+        if (currentTaskCount > 0) {
             taskCount = currentTaskCount - 1;
             document.getElementById('task-count').innerText = taskCount;
             taskCompleted = currentCompletedTask + 1;
             document.getElementById('task-completed').innerText = taskCompleted;
-            alert("Submitted Successfully")
+            alert("Boared Updated Successfully!")
             button.disabled = true;
+
+            if(taskCount === 0){
+                alert("Congrates!!! You have completed all the task.")
+            }
+
+            let logBox = document.getElementById('log-activity');
+            let div = document.createElement('div')
+            let p = document.createElement('div');
+            p.innerHTML = 'You have Completed The Task at 12:48:15 PM'
+            div.appendChild(p);
+            logBox.appendChild(div);
+            // const logBox = document.querySelectorAll('.log-heading');
+            // logBox.forEach(heading => {
+            //     const innerValue = heading.innerText;
+            //     const p = document.createElement('p')
+            //     p.innerHTML = innerValue
+            //     const div = document.createElement('div');
+            //     div.appendChild(p)
+            //     const activity = document.getElementById('log-activity');
+            //     activity.appendChild(div)
+            // })
         }
     })
 });
 
-
-
-
-
-
-
-
-
+const logBtn = document.getElementById('log-btn').addEventListener('click',function(){
+    document.getElementById('log-activity').innerText = ''})
 

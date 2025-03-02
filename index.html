@@ -14,9 +14,10 @@
         rel="stylesheet">
 
     <style>
-        .bgg{
+        .bgg {
             background-color: brown;
         }
+
         .font {
             font-family: "Poppins", sans-serif;
             font-style: normal;
@@ -55,7 +56,8 @@
                         <p id="task-count" class="text-3xl font-bold">06</p>
                     </div>
                 </div>
-                <div id="blog-btn" class="flex items-center pl-10 pr-20 gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] cursor-pointer">
+                <div id="blog-btn"
+                    class="flex items-center pl-10 pr-20 gap-3 rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] cursor-pointer">
                     <img src="assets/board.png" alt="">
                     <p class="text-white">
                         Discover Something<br>New Today!
@@ -77,7 +79,7 @@
                 <!--Card1-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">ShopEase</p>
-                    <h3 class="text-xl font-medium py-2">Fix Mobile Button Issue </h3>
+                    <h3 class="log-heading text-xl font-medium py-2">Fix Mobile Button Issue </h3>
                     <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
                         better functionality.
                     </p>
@@ -95,7 +97,7 @@
                 <!--Card2-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">CloudSync</p>
-                    <h3 class="text-xl font-medium py-2">Add Dark Mode</h3>
+                    <h3 class="log-heading text-xl font-medium py-2">Add Dark Mode</h3>
                     <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
                         better functionality.
                     </p>
@@ -113,7 +115,7 @@
                 <!--Card3-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">SwiftPay</p>
-                    <h3 class="text-xl font-medium py-2">Optimize Home page </h3>
+                    <h3 class="log-heading text-xl font-medium py-2">Optimize Home page </h3>
                     <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
                         better functionality.
                     </p>
@@ -131,7 +133,7 @@
                 <!--Card4-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">Meta</p>
-                    <h3 class="text-xl font-medium py-2">Add new emoji 🤲</h3>
+                    <h3 class="log-heading text-xl font-medium py-2">Add new emoji 🤲</h3>
                     <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
                         better functionality.
                     </p>
@@ -149,7 +151,7 @@
                 <!--Card5-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">Google LLC</p>
-                    <h3 class="text-xl font-medium py-2">Integrate OpenAI API</h3>
+                    <h3 class="log-heading text-xl font-medium py-2">Integrate OpenAI API</h3>
                     <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
                         better functionality.
                     </p>
@@ -167,7 +169,7 @@
                 <!--Card6-->
                 <div class="px-5 py-5 bg-[#F4F7FF] rounded-lg">
                     <p class="bg-white w-28 px-2 py-2 rounded-lg text-center">Glassdoor</p>
-                    <h3 class="text-xl font-medium py-2">Improve Job searching </h3>
+                    <h3 class="log-heading text-xl font-medium py-2">Improve Job searching </h3>
                     <p class="bg-white pl-4 py-2 rounded-lg truncate">Fix unresponsive or misaligned mobile button for
                         better functionality.
                     </p>
@@ -189,7 +191,11 @@
                 <img src="assets/activity.png" alt="">
                 <h3>Activity Log</h3>
             </div>
-            <button class="btn bg-blue-600 text-white rounded-lg">Clear History</button>
+            <div>
+                <button id="log-btn" class="btn bg-blue-600 text-white rounded-lg">Clear History</button>
+            </div>
+            <section id="log-activity">
+            </section>
         </section>
     </main>
     <script src="utilities/utilities.js"></script>
